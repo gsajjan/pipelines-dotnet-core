@@ -1,4 +1,10 @@
 # ASP.NET Core
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Free Trial(1)(30a9eabf-b800-42ce-bda4-de1781531687)'
+    appType: 'webAppLinux'
+    appName: 'myapppipeline-rg'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
 # Build and test ASP.NET Core projects targeting .NET Core.
 # Add steps that run tests, create a NuGet package, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
