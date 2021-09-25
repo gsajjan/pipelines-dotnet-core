@@ -1,4 +1,3 @@
-
 variables:
   buildConfiguration: 'Release'
 
@@ -11,7 +10,7 @@ steps:
     publishWebProjects: true
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '<Azure service connection>'
+    azureSubscription: 'Free Trial(30a9eabf-b800-42ce-bda4-de1781531687)'
     appType: 'webAppLinux'
     appName: 'myapppipeline-rg'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
